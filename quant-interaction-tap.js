@@ -29,6 +29,7 @@
     }
     function select() {
         if (blocked()) return null;
+        if (root.QuantInteractionAim) return root.QuantInteractionAim.resolve({ getGroundItems: settings.getGroundItems });
         const player = mp.players.local, ray = aim();
         let item = null, best = Infinity;
         const groundItems = settings.getGroundItems();
@@ -148,6 +149,9 @@
                 if (!options || typeof options[key] !== 'function') throw new TypeError('Потрібна функція '+key);
             }
             settings = options; targetSignature = ''; refresh();
+            if (root.QuantInteractionAim) root.QuantInteractionAim.configure({
+                getGroundItems: settings.getGroundItems, onTargetChanged: settings.onTargetChanged
+            });
         },
         getTarget() {
             const t = select();
