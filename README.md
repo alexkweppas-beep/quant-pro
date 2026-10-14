@@ -5,4 +5,4 @@
 - [quant-interaction-tap.js](quant-interaction-tap.js) — Взаємодія одним натисканням E та підбір предмета під кружечком. Нажаль без серверної частини, інформації не достатньо щоб доробити до ідеалу, адже в кліентській частині підбор предметів опрацьовується тільки івентом - "EventKeyDownE" .
 - [quant-interaction-aim.js](quant-interaction-aim.js) — Точніший вибір цілі кружечком: пріоритет прямого наведення, невеликий допуск і перевірка видимості.
 - [quant-pump-refuel.js](quant-pump-refuel.js) — Заправка через E біля колонки без жовтого кола та вимоги до кута авто, згідно пропозиції https://discord.com/channels/981163624980680714/1559499932623179806
-- [quant-mouse-binds.js](quant-mouse-binds.js) — Підтримка Mouse4/Mouse5 у штатних налаштуваннях біндів через updateBind. Потребує підключення до клієнта та компонента меню CEF.
+- [quant-mouse-binds.js](quant-mouse-binds.js) — Підтримка Mouse4/Mouse5 у штатних налаштуваннях біндів через updateBind.
